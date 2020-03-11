@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "749552729498",
+    "firebase_url": "https://tracing-7fa2e.firebaseio.com",
+    "project_id": "tracing-7fa2e",
+    "storage_bucket": "tracing-7fa2e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:749552729498:android:0b16de60906dda092b8e23",
+        "android_client_info": {
+          "package_name": "org.electromob.tracing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "749552729498-14so0c16jsfsub4sq8o99j9lq6l88l38.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.electromob.tracing",
+            "certificate_hash": "7364858aa871459da8518e296d5da0a94cdc59b0"
+          }
+        },
+        {
+          "client_id": "749552729498-ff6p0cna8enl6iojo5k2c7ik95gbcuos.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHpx-h_RJNIE6N_vYOW1U6crQQdYNaZUw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "749552729498-ff6p0cna8enl6iojo5k2c7ik95gbcuos.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

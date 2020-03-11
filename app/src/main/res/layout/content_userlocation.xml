@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".userlocation"
+    tools:showIn="@layout/app_bar_userlocation">
+
+
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/cardView"
+        android:layout_alignBottom="@+id/infolocation"
+        map:layout_constraintBottom_toTopOf="@+id/infolocation"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="0.0"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent"
+        map:layout_constraintVertical_bias="0.0"
+        tools:context=".mynavigation"
+        tools:ignore="UnknownId" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="395dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/search_background"
+        android:elevation="80dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026">
+
+
+        <ImageView
+            android:id="@+id/addpeople"
+            android:layout_width="60dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginTop="3dp"
+            android:elevation="100dp"
+            app:srcCompat="@drawable/ic_people4" />
+
+        <ImageView
+            android:id="@+id/bus"
+            android:layout_width="65dp"
+            android:layout_height="46dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="3dp"
+            android:elevation="100dp"
+            app:srcCompat="@drawable/ic_bus1" />
+
+
+        <ImageView
+            android:id="@+id/mypeople"
+            android:layout_width="64dp"
+            android:layout_height="48dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="3dp"
+            android:elevation="100dp"
+            app:srcCompat="@drawable/ic_people9" />
+
+
+        <ImageView
+            android:id="@+id/share"
+            android:layout_width="55dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="320dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginTop="8dp"
+            android:elevation="100dp"
+            app:srcCompat="@drawable/ic_share1" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/infolocation"
+        android:layout_width="424dp"
+        android:layout_height="105dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="572dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/search_background"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:text="Welcome To Track-It"
+        android:textColor="#407FAB"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/gps"
+        android:layout_width="72dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="116dp"
+        android:elevation="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_gpsuser1" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

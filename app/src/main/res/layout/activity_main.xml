@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#407FAB"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="427dp"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:background="#DD555555"
+        android:onClick="gotoregister"
+        android:text="Sign UP"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteY="648dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_alignTop="@+id/button2"
+        android:layout_marginTop="-69dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#ffffff"
+        android:onClick="gotologin"
+        android:text="LOGIN"
+        android:textColor="#DD555555"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteY="576dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="382dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        app:srcCompat="@mipmap/ic_tittle1" />
+
+
+</RelativeLayout>
